@@ -1,22 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Toggle from './component/Toggle';
 import Clock from './component/Clock';
 import { App, App2 } from './App';
-import { Test1 } from './component/Test';
+import { Test1, Test2 } from './component/Test';
 import ShoppingList from './component/ShoppingList';
 import Game from './component/Game'
 import reportWebVitals from './reportWebVitals';
 
 const element = (
 <>
+  <Toggle />
   <Clock />
   <Game />
-  <ShoppingList name="參數測試 Class" />
+  <ShoppingList name="ShoppingList Class" />
+  <Test1 name="參數測試 Function" />
+  <Test2 name="參數測試 Class" /> 
   <App />
   <App2 />
-  <Test1 name="參數測試 Function">
-  </Test1>
 </>  
 )
 

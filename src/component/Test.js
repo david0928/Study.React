@@ -1,24 +1,25 @@
+import React from "react";
+
 const TestPrivate = (props) => {
     return <div> ------ {props.name} ------ </div>;
 };
 
-
 const Test1 = (props) =>{
     return (
         <div className="App">
-        {TestPrivate(props)}
-    </div>
+            Test1: {TestPrivate(props)}
+        </div>
     );
 };
 
-const Test2 = (props) =>{
-    return (
-        <div className="App">
-        <p>
-          xxx {props.name} xxx
-        </p>
-    </div>
-    );
-};
+class Test2 extends React.Component {
+    render() {
+        return (
+            <div className="App">
+                Test2: {TestPrivate(this.props)}
+            </div>
+        );
+    }
+}
 
 export {Test1, Test2};
