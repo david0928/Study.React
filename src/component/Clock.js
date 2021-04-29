@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const FormattedDate = (props) => {
   return <h2>It is {props.date.toLocaleTimeString()}.</h2>;

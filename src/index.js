@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import LoginControl from './component/LoginControl';
 import Toggle from './component/Toggle';
 import Clock from './component/Clock';
 import { App, App2 } from './App';
@@ -11,6 +12,8 @@ import reportWebVitals from './reportWebVitals';
 
 const element = (
 <>
+  <LoginControl />
+  <br/>
   <Toggle />
   <Clock />
   <Game />
@@ -20,7 +23,7 @@ const element = (
   <App />
   <App2 />
 </>  
-)
+);
 
 ReactDOM.render(
   <React.StrictMode>
