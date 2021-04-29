@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import NumberList2 from './component/NumberList2';
+import NumberList1 from './component/NumberList1';
 import LoginControl from './component/LoginControl';
 import Toggle from './component/Toggle';
 import Clock from './component/Clock';
@@ -10,8 +12,18 @@ import ShoppingList from './component/ShoppingList';
 import Game from './component/Game'
 import reportWebVitals from './reportWebVitals';
 
+const posts = [
+  {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+  {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+];
+
+const number1s = [1, 2, 3, 4, 5];
+
 const element = (
 <>
+  <NumberList2 posts={posts} />
+  <NumberList1 numbers={number1s} />
+  <br/>
   <LoginControl />
   <br/>
   <Toggle />
